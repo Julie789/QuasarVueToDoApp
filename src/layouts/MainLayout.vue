@@ -16,9 +16,10 @@
           <span v-if="$q.platform.is.android">Android</span>
           <span v-else-if="$q.platform.is.mac">Mac</span>
           <span v-else>Web</span>
+
+          <div class="text-subtitle1">Running on Quasar v{{ $q.version }}</div>
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
