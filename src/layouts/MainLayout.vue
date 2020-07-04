@@ -60,6 +60,12 @@ export default {
     EssentialLink
   },
 
+  created() {
+    if (this.$q.platform.is.cordova){
+      alert('This is Cordova app')
+    }
+  },
+
   data () {
     return {
       leftDrawerOpen: false,
